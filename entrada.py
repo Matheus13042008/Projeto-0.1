@@ -1,10 +1,16 @@
+nome = input('Qual o seu nome:\n')
+print('Ola',nome,' Seja bem vindo')
+senha = input('Qual sua senha:\n')
+print('Sua senha é:\n',senha)
+dominio =input('Qual seu dominio:\n')
+print('O seu dominio é:\n',dominio)
 
+email = nome + '@' + dominio
+print('Seu email é:\n',email + '.com')
 
-
-nome = input('What´s your name:\n')
-print('Hello',nome,'Welcome\n')
-senha = input ('Whats you password?\n')
-print('Welcome Again\n')
-dominio = input('whats your dominio\n:')
-print('your dominio is:', nome, + '@',dominio, '.com')
-
+palavra = 'jaca'
+#colocar a string como toda maiuscula
+print('Colocando o texto em maiuscula:',palavra.upper())
+PALAVRA = 'JACA'
+print('Palavra em Minuscula:', PALAVRA.lower())
+ 

@@ -1,6 +1,0 @@
-
-Name = Input('What´s your name')
-print('Welcome')
-Password = input('Password')
-print('good',password)
-
