@@ -1,22 +1,12 @@
-nome = input('Qual o seu nome:\n')
-print('Ola',nome,' Seja bem vindo')
-senha = input('Qual sua senha:\n')
-print('Sua senha é:\n',senha)
-dominio =input('Qual seu dominio:\n')
-print('O seu dominio é:\n',dominio)
+print('Formulário')
+nome = input('Digite seu Nome:\n').strip()
+sobrenome = input('Digite seu sobrenome(s):\n')
+nascimento = input('Digite quando você nasceu, incluindo dia, mês e ano:\n')
+universidade = input('Digite qual universidade está cursando:\n')
+print('Confirma Que Seu Nome Então É:', (nome.upper()), (sobrenome.upper()))
 
-email = nome + '@' + dominio 
-print('Seu email é:\n',email)
-
-palavra = 'jaca'
-#colocar a string como toda maiuscula
-print('Colocando o texto em maiuscula:',palavra.upper())
-PALAVRA = 'JACA'
-print('Palavra em Minuscula:', PALAVRA.lower())
-
-contagem = email
-
-print('SUA NOVA SENHA É:','a' + str(contagem.count('a')) + 'e' + str(contagem.count('e')) + 'i' + str(contagem.count('i')) + 'o' + str(contagem.count('o')) + 'u' + str(contagem.count('u')))
-
+email = (nome.lower()) + '.' + (sobrenome.lower()) + '@' + (universidade.lower()) +'.br'
+print('Seu email é:',email)
+print('Sua senha é:''a' + str(email.count('a')) + 'e' + str(email.count('e')) + 'i' + str(email.count('i')) + 'o' + str(email.count('o')) + 'u' + str(email.count('u')))
 
 
